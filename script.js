@@ -41,8 +41,9 @@ el.classList.toggle("reverse");
 }
 
 //mudar fonte
-const menuDeFontes= document.querySelector("#fontes");
-menuDeFontes.addEventListener("select",()=>{
+/*const menuDeFontes= document.querySelector("#fontes");
+menuDeFontes.addEventListener("input",()=>{
 let valor = menuDeFontes.value;
 console.log("hello");
 })
+*/
