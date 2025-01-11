@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titulo</title>
+</head>
+<body>
+  <button id="themeButton" onclick="toggleTheme()">Theme</button>
+
+<div id="principaldiv" class=" ">
+    <h1>Bem vindo ao editor de texto</h1>
+    <p>Edite o texto abaixo como bem entender</p>
+  <div id="div1">
+      <h2 class=" ">Texto exemplo</h2>
+      <textArea placeholder="insira algum texto aqui"></textArea><br>
+      <input type="submit" value="atualizar" id="submitButton" onclick="atualizarTexto()" style="font-size: 20px;">
+  </div>
+
+    <p style="font-size: 30px; font-style: italic;"><strong>Ferramentas</strong></p>
+  <div class="div2">
+      <label id="labelColor">cores</label><br>
+      <input id="color" type="color">
+  </div> 
+  <br>
+  <div class="div2">
+    <label id="labelRange">Tamanho</label><br>
+    <input id="range" type="range" min="1" max="182" value="50">
+  </div>   
+   
+</div>  
+    <script src="script.js"></script>    
+</body>
+</html>

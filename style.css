@@ -1,0 +1,32 @@
+
+.div1{
+    padding: 150px 0 0 0;
+    margin: 0 0 50px 0;
+}
+h2{
+font-size: 50px;
+margin: 0 0 10px 0;
+}
+textarea{
+    font-size: 20px;
+    padding: 20px;
+}
+#submitbutton{
+margin: 10px;
+font-size: 25px;
+text-align: center;
+}
+.div2{
+margin: 0 30px 0 30px;
+}
+#principaldiv{
+    padding: 50px;    
+    text-align: center;
+}
+.darktheme{
+    background-color: rgb(45,45,45);
+    color: rgb(255,255,255)
+}
+#themeButton{
+background-color: white;    
+}
