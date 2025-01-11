@@ -1,10 +1,15 @@
 const el = document.querySelector("h2");
 const bodyTheme =document.querySelector("body");
 //atualizar texto
-function atualizarTexto(){
-const novoTexto= document.querySelector("textarea");
-el.innerHTML=novoTexto.value;
-}
+
+const exibirCaracteres = document.querySelector("sub");
+const textArea = document.querySelector("textarea");
+textArea.addEventListener("input",()=>{
+let contador = textArea.value.length;    
+el.innerHTML= textArea.value
+exibirCaracteres.innerHTML=contador +"/"+textArea.maxLength;
+
+})
 
 //alterar o tamanho do texto
 const range = document.querySelector("#range");
@@ -29,3 +34,15 @@ color.addEventListener("input",()=>{
 function toggleTheme(){
 bodyTheme.classList.toggle("darktheme");
 }
+
+//reverter
+function reverse(){
+el.classList.toggle("reverse"); 
+}
+
+//mudar fonte
+const menuDeFontes= document.querySelector("#fontes");
+menuDeFontes.addEventListener("select",()=>{
+let valor = menuDeFontes.value;
+console.log("hello");
+})
